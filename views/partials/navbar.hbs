@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand navbar-logo" href="/">Secret message</a>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      {{#if isHome}}
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Main page</span></a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main page</span></a>
+      </li>
+      {{/if}}
+
+      {{#if isDecrypt}}
+      <li class="nav-item active">
+        <a class="nav-link" href="/decrypt">Decrypt message</span></a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/decrypt">Decrypt message</span></a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
